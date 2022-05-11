@@ -1,2 +1,2 @@
 # Immohub-Frontend
-front
+Only Front
