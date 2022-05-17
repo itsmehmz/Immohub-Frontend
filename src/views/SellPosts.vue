@@ -1,6 +1,6 @@
 <template >
   <div class="sellposts">
-  <v-app id="rent">
+  <v-app id="sell">
     <v-app-bar
       app
       class="blue darken-4"
@@ -39,7 +39,7 @@
 </template>
 
 <style>
-#rent{
+#sell{
   background: url('../assets/blue.jpg');
 }
 </style>

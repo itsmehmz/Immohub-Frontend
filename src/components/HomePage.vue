@@ -23,7 +23,7 @@
     <v-navigation-drawer v-model="drawer" app class="blue darken-3">
         <nav>
             <v-list class="mt-2 ml-4" nav>
-                <v-list-item :to="links.route1" link>
+                <v-list-item @click="$router.push('/rentposts')" link>
                     <v-list-item-action>
                         <v-icon dark>widgets</v-icon>
                     </v-list-item-action>
@@ -34,7 +34,7 @@
             </v-list>
             <v-divider class="black"></v-divider>
             <v-list class="mt-2 ml-4" nav>
-                <v-list-item :to="links.route2" link>
+                <v-list-item @click="$router.push('/sellposts')" link>
                     <v-list-item-action>
                         <v-icon dark>widgets</v-icon>
                     </v-list-item-action>
@@ -59,6 +59,7 @@
             <v-row>
                 <v-col class="px-16 mx-16">
                     <v-text-field 
+                        class="white mx-4 elev"
                         align-center
                         hide-details 
                         label="What are yo lookin for" 
@@ -67,7 +68,7 @@
                         rounded 
                         dense 
                         single-line 
-                        append-icon="mdi-magnify" class="mx-4">
+                        append-icon="mdi-magnify">
                     </v-text-field>
                 </v-col>
             </v-row>
@@ -85,7 +86,7 @@
             return{
                 selection:'',
                 drawer:false,
-                links:[{route1:'/rentposts'},{route2:'/sellposts'}]
+                //links:[{route1:'/rentposts'},{route2:'/sellposts'}]
             }
         }
     }

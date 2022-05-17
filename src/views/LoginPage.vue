@@ -1,5 +1,5 @@
 <template>
-   <v-app>
+   <v-app id="login">
     <div class="background"></div>
     <v-main class="d-flex justify-center align-center">
       <v-col cols="10" lg="4" class="mx-auto">
@@ -83,13 +83,8 @@
 </script>
 
 <style>
-main{
+#login{
     background-image: url('../assets/blue.jpg') !important;
-    height: 400px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
     background-size: cover;
   }
 </style>

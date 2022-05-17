@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-/*import HomePage from '../components/HomePage.vue'
+import HomePage from '../components/HomePage.vue'
 import SellPosts from '../views/SellPosts.vue'
 import RentPosts from '../views/RentPosts.vue'
 import LoginPage from '../views/LoginPage.vue'
-import SignPage from '../views/SignPage.vue'*/
+import SignPage from '../views/SignPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
- /* {
+ {
     path: '/',
     name: 'homepage',
     component: HomePage
@@ -36,7 +36,7 @@ const routes = [
     path: '/signpage',
     name: 'signpage',
     component: SignPage
-  },*/
+  },
 ]
 
 const router = new VueRouter({
